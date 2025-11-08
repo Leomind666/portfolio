@@ -1,0 +1,115 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: white;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #007b83;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.intro {
+  flex: 1;
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.intro a {
+  color: #007b83;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.photo img {
+  width: 180px;
+  border-radius: 4px;
+}
+
+.pdf-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  height: 600px;
+}
+
+.download-link {
+  color: #007b83;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+ /*=====  Code for Mobile Responsive 768 ===========*/
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo img {
+    margin-top: 20px;
+  }
+}
+
+
+ /*=====  Code for Mobile Responsive 450 ===========*/
+
+ @media (max-width: 450px) {
+  h1 {
+  font-size: 20px;
+}
+ }
+
+
+ 
+   
